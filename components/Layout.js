@@ -14,8 +14,8 @@ export default function Layout(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex min-h-screen flex-col justify-between">
-        <header>
-          <nav className="flex h-12 items-center px-4 justify-between shadow-md">
+        <header className="bg-white">
+          <nav className="flex h-12 items-center px-4 justify-between shadow-md fixed w-full bg-white">
             <Link href="/">
               <a className="text-2xl font-bold">eCommerce</a>
             </Link>
@@ -29,7 +29,9 @@ export default function Layout(props) {
             </div>
           </nav>
         </header>
-        <main className="contatiner m-auto mt-4 px-4">{props.children}</main>
+        <main className="contatiner m-auto mt-4 px-4 mt-16">
+          {props.children}
+        </main>
         <footer className="flex justify-center items-center h-10">
           <p>Copyright &copy; 2022 eCommerce</p>
         </footer>

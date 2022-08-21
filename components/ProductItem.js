@@ -5,7 +5,7 @@ export default function ProductItem(props) {
   const product = props.product;
 
   return (
-    <div className="card">
+    <div className="card hover:opacity-70 duration-300 cursor-pointer">
       <Link href={`/product/${product.slug}`}>
         <a>
           <img
@@ -19,7 +19,7 @@ export default function ProductItem(props) {
       <div className="flex flex-col item-center justify-center p-5 items-center">
         <Link href={`/product/${product.slug}`}>
           <a>
-            <h2 className="text-lg">{product.name}</h2>
+            <h2 className="text-lg font-medium">{product.name}</h2>
           </a>
         </Link>
         <p className="mb-2">{product.brand}</p>

@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router';
 import React from 'react';
-import Link from 'next/link';
 import Layout from '../../components/Layout';
 import data from '../../utils/data';
 import Pagination from '../../components/Pagination';

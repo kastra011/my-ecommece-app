@@ -6,7 +6,7 @@ export default function ProductItem(props) {
 
   return (
     <div className="card">
-      <Link href={`/products/${product.slug}`}>
+      <Link href={`/product/${product.slug}`}>
         <a>
           <img
             src={product.image}
@@ -17,7 +17,7 @@ export default function ProductItem(props) {
       </Link>
 
       <div className="flex flex-col item-center justify-center p-5 items-center">
-        <Link href={`/products/${product.slug}`}>
+        <Link href={`/product/${product.slug}`}>
           <a>
             <h2 className="text-lg">{product.name}</h2>
           </a>

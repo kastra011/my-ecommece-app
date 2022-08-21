@@ -2,6 +2,7 @@ import Head from 'next/head';
 import React from 'react';
 import { Fragment } from 'react';
 import Link from 'next/link';
+import ScrollToTop from './ScrollToTop';
 
 export default function Layout(props) {
   return (
@@ -29,13 +30,14 @@ export default function Layout(props) {
             </div>
           </nav>
         </header>
-        <main className="contatiner m-auto mt-4 px-4 mt-16">
+        <main className="contatiner m-auto mt-4 px-16 mt-16">
           {props.children}
         </main>
         <footer className="flex justify-center items-center h-10">
           <p>Copyright &copy; 2022 eCommerce</p>
         </footer>
       </div>
+      <ScrollToTop />
     </Fragment>
   );
 }

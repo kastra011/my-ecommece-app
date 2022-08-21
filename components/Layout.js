@@ -37,7 +37,7 @@ export default function Layout(props) {
             </div>
           </nav>
         </header>
-        <main className="contatiner m-auto mt-4 px-16 mt-16">
+        <main className="contatiner my-auto mt-4 px-16 mt-16">
           {props.children}
         </main>
         <footer className="flex justify-center items-center h-10">

@@ -1,6 +1,6 @@
-import Head from 'next/head';
 import React from 'react';
 import { Fragment } from 'react';
+import Head from 'next/head';
 import Link from 'next/link';
 import ScrollToTop from './ScrollToTop';
 import { FiShoppingCart, FiLogIn } from 'react-icons/fi';
